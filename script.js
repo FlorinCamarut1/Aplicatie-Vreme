@@ -25,5 +25,22 @@ let weather = {
       "Umiditate " + humidity + " %";
     document.querySelector(".vant").innerText =
       "Viteza vant: " + speed + " Km/h";
+    document.querySelector(".vreme").classList.remove("loading");
+    document.body.style.backgroundImage =
+      "url('https://source.unsplash.com/1600x900/?" + name + "')";
+  },
+  search: function () {
+    this.fetchWather(document.querySelector(".bara--cautare").value);
   },
 };
+document.querySelector(".cauta button").addEventListener("click", function () {
+  weather.search();
+});
+document
+  .querySelector(".bara--cautare")
+  .addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+      weather.search();
+    }
+  });
+weather.fetchWather("Suceava");
