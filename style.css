@@ -69,3 +69,9 @@ h1.temperatura {
   margin-top: 0.5em;
   margin-bottom: 0.2em;
 }
+.temp {
+  display: flex;
+}
+.descriere {
+  text-transform: capitalize;
+}
