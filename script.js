@@ -16,7 +16,7 @@ let weather = {
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
     console.log(name, icon, description, temp, humidity, speed);
-    document.querySelector(".oras").innerText = "Vremea in " + name;
+    document.querySelector(".oras").innerText = "Vremea în " + name;
     document.querySelector(".icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
     document.querySelector(".temperatura").innerText = temp + " °C";
@@ -24,7 +24,7 @@ let weather = {
     document.querySelector(".umiditate").innerText =
       "Umiditate " + humidity + " %";
     document.querySelector(".vant").innerText =
-      "Viteza vant: " + speed + " Km/h";
+      "Viteza vântului: " + speed + " Km/h";
     document.querySelector(".vreme").classList.remove("loading");
   },
   search: function () {
