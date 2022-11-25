@@ -4,48 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script href="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Aplicatie Vreme</title>
   </head>
   <body>
     <div class="card">
       <div class="cauta">
-        <input type="text" class="bara--cautare" />
+        <input type="text" class="bara--cautare" placeholder="Cauta" />
         <button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="2rem"
-            height="2rem"
-            fill="#000000"
-            viewBox="0 0 256 256"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
           >
-            <rect width="256" height="256" fill="none"></rect>
-            <circle
-              cx="116"
-              cy="116"
-              r="84"
-              fill="none"
-              stroke="#000000"
+            <path
               stroke-linecap="round"
               stroke-linejoin="round"
-              stroke-width="16"
-            ></circle>
-            <line
-              x1="175.4"
-              y1="175.4"
-              x2="224"
-              y2="224"
-              fill="none"
-              stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></line>
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+            />
           </svg>
         </button>
       </div>
       <div class="Vreme">
         <h2 class="oras">Vremea in Suceava</h2>
-        <div class="temperatura">20°C</div>
+        <h1 class="temperatura">20°C</h1>
         <img src="" class="icon" />
         <div class="descriere">Inourat</div>
         <div class="umiditate">Umiditate 10%</div>
