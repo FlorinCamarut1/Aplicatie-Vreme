@@ -26,8 +26,6 @@ let weather = {
     document.querySelector(".vant").innerText =
       "Viteza vant: " + speed + " Km/h";
     document.querySelector(".vreme").classList.remove("loading");
-    document.body.style.backgroundImage =
-      "url('https://source.unsplash.com/1600x900/?" + name + "')";
   },
   search: function () {
     this.fetchWather(document.querySelector(".bara--cautare").value);
